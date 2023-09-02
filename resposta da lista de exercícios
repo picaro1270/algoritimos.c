@@ -1,0 +1,184 @@
+BEE 1002
+#include <stdio.h>
+
+int main (void){
+
+    double raio, area;
+
+    scanf("%lf", &raio);
+
+    area = 3.14159*(raio*raio);
+
+    printf("A=%.4lf\n" ,area);
+
+    return 0;
+}
+
+BEE 1004
+#include <stdio.h>
+
+int main(void) {
+  
+  int a, b,  PROD;
+  
+  scanf("%d",&a);
+  scanf("%d",&b);
+    
+    PROD = a*b;
+    
+    printf("PROD = %d\n",PROD);
+    
+    
+    return 0;
+}
+
+BEE 1007
+#include <stdio.h>
+
+int main(void) {
+    
+    int a, b, c, d, diferenca;
+    
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    scanf("%d", &d);
+    
+    diferenca = (a*b)-(c*d);
+    
+    printf("DIFERENCA = %d\n", diferenca);
+    
+    return 0;
+}
+BEE 1014
+#include<stdio.h>
+
+int main(){
+	int dist;
+	float combust, result;
+	
+	scanf("%d",  &dist);
+	scanf("%f", &combust);
+	
+	result = (dist / combust);
+	
+	printf("%.3f km/l\n", result); 
+	return 0;
+}
+
+BEE 1018
+#include<stdio.h>
+int main(){
+	
+int N, cem, cinquenta, cinquenta1, vinte, vinte1, dez, dez1, cinco, cinco1, dois, dois1, um, um1;
+
+scanf("%d", &N);
+printf("%d\n", N);
+cem = N/100;
+cinquenta = N%100;
+cinquenta1 = cinquenta/50;
+vinte = cinquenta%50;
+vinte1 = vinte/20;
+dez = vinte%20;
+dez1 = dez/10;
+cinco = dez%10;
+cinco1 = cinco/5;
+dois = cinco%5;
+dois1 = dois/2;
+um = dois%2;
+um1 = um/1;
+
+printf("%d nota(s) de R$ 100,00\n",cem);
+printf("%d nota(s) de R$ 50,00\n",cinquenta1);
+printf("%d nota(s) de R$ 20,00\n",vinte1);
+printf("%d nota(s) de R$ 10,00\n",dez1);
+printf("%d nota(s) de R$ 5,00\n",cinco1);
+printf("%d nota(s) de R$ 2,00\n",dois1);
+printf("%d nota(s) de R$ 1,00\n",um1);
+
+return 0;
+}
+BEE 1019
+#include<stdio.h>
+
+int main (){
+
+int N, hora, min, seg;
+
+scanf("%d", &N);
+ 
+hora = N/3600;
+min = (N-(hora*3600))/60;
+seg = N-((hora*3600)+(min*60));
+
+printf("%d:%d:%d\n", hora, min, seg);
+
+return 0;
+
+}
+BEE 1020
+
+#include<stdio.h>
+int main (){
+	int num, ano, mes, dia;
+	
+	scanf("%d",&num);
+	
+	ano = floor(num / 365);
+	mes = floor((num % 365)/30);
+	dia = (num % 365) % 30;
+	
+	if (mes >=12){
+		ano = ano + floor(mes/12);
+		mes %= 12;
+	}
+	printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n", ano, mes, dia);
+	return 0;
+}
+
+BEE 1052
+
+         #include<stdio.h>
+
+int main(){
+	int a; 
+	scanf ("%d", &a);
+
+        if(a==1){ 
+			printf ("January\n"); 
+			}
+        if(a==2){ 
+			printf("February\n"); 
+			}
+        if(a==3){ 
+			printf("March\n"); 
+			}
+        if(a==4){ 
+			printf("April\n");
+			}
+        if(a==5){ 
+			printf("May\n");
+			}
+        if(a==6){ 
+			printf("June\n");
+			}
+        if(a==7){ 
+			printf("July\n");
+			}
+        if (a==8){ 
+			printf("August\n");
+			}
+        if(a==9){ 
+			printf("September\n");
+			}
+        if (a==10){ 
+			printf("October\n");
+			}
+        if (a==11){ 
+			printf("November\n");
+			}
+        if (a==12){ 
+			printf("December\n");
+			}
+	return 0;
+}
